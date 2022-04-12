@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "titus titus titus titus"
+    "caj caj caj caj"
+    "footer footer footer footer";
+}
+.contenedor1{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "titus1 titus1 titus1"
+    "descript descript descript"
+    "list list list"
+    "footer1 footer1 footer1";
+}
+header{
+    background-color: rgb(180, 21, 21);
+    height: 3.5rem;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    height: 3.5rem;
+    display: flex;
+}
+.in{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-right: 3rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h3{
+    text-decoration: none;
+}
+body{
+    background-image: url(./fotos/4.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+.menu{
+    list-style-type: none;
+    margin: 10px;
+    width: 100%;
+    text-align: right;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 10px; 
+    font-family: 'Poppins', sans-serif; 
+}
+
+.menu li:hover{
+    background-color:  rgb(180, 21, 21);
+    border-radius: 40%;
+    text-decoration: underline;
+}
+menu li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.titus{
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    grid-area: titus;
+}
+.tit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titus1{
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    grid-area: titus1;
+}
+.t1{
+    font-size: 38px;
+}
+.t2{
+    font-size: 30px;
+}
+.mision{
+    background-color:#FFF0C9;
+    width: 300px;
+    margin: 1rem;
+    padding: 10px;
+    height: 180px;
+    overflow: auto;
+    border: 5px;
+    border-radius: 5%;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    grid-area: mision;
+}
+h4{
+    font-size: 22px;
+    color: rgb(180, 21, 21);
+}
+h5{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+.vision{
+    background-color:#FFF0C9;
+    width: 300px;
+    margin: 1rem;
+    padding: 10px;
+    height: 180px;
+    overflow: auto;
+    border: 5px;
+    border-radius: 5%;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif ;
+    text-align: center;
+    grid-area: vision;
+}
+.cultura{
+    background-color:#FFF0C9;
+    width: 300px;
+    margin: 1rem;
+    padding: 10px;
+    height: 180px;
+    overflow: auto;
+    border: 5px;
+    border-radius: 5%;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif ;
+    text-align: center;
+    grid-area: cultura;
+}
+.valores{
+    background-color:#FFF0C9;
+    width: 300px;
+    margin: 1rem;
+    padding: 10px;
+    height: 180px;
+    overflow: auto;
+    border: 5px;
+    border-radius: 5%;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif ;
+    text-align: center;
+    grid-area: valores;
+}
+section, p{
+    font-size: 15px;
+}
+.futer{
+    grid-area: footer;
+}
+.footer{
+    margin: .5rem;
+    padding: 3px;
+    text-align: center;
+}
+.futer1{
+    grid-area: footer1;
+    margin-top: 1rem;
+}
+.footer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contact{
+    color: black;
+    font-family: 'Poppins', sans-serif ;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+.caj{
+    grid-area: caj;
+    margin-top: 4rem;
+}
+.cajis1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cajis2{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.descript{
+    grid-area: descript;
+    margin-top: 4rem;
+}
+.descrip{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.list{
+    grid-area: list;
+    margin-top: 1rem;
+}
+.listas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.i1{
+    width: 8rem;
+}
+.i2{
+    width: 8rem;
+    grid-area: i2;
+}
+.i3{
+    width: 8rem;
+    grid-area: i3;
+}
+.d1{
+    width: 8rem;
+
+}
+.d2{
+    width: 8rem;
+
+}
+.d3{
+    width: 8rem;
+
+}
+.form{
+    width: 30rem;
+    text-align: center;
+    background: #fff0c94b;
+
+}
+.chij{
+    border:none;
+    outline: none;
+    background-color:#fff0c985 ;
+    border-bottom:  2px solid red;
+    width: 100%;
+    margin-bottom: 2px;
+    border-radius: 2px;
+    font-size: 12px;
+
+}
+.finput{
+    background-color: #fff0c985;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid red;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+@media screen and (max-width: 768px){
+    .contenedor{
+        grid-template-areas: 
+        "titus titus titus titus"
+        "caj caj caj caj"
+        "footer footer footer footer";
+    }
+    .contenedor1{
+        grid-template-areas: 
+        "titus1 titus1 titus1"
+        "descript descript list"
+        "descript descript list"
+        "descript descript list"
+        "footer1 footer1 footer1";
+        ;
+    }
+    .listas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .descrip{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .d1{
+        width: 8rem;
+        margin-bottom: 6rem;
+    
+    }
+    .d2{
+        width: 8rem;
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+    }
+    .d3{
+        width: 8rem;
+        margin-top: 3rem;
+    }
+    }
