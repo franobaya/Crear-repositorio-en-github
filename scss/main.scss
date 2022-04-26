@@ -1,0 +1,99 @@
+main{
+    .menu{
+        list-style-type: none;
+        padding: 0; 
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: right;
+        li{
+            margin: 10px;
+            padding: 10px;
+            outline: 2px solid white;
+            overflow: hidden;
+            transition: color 1s;
+            position: relative; 
+            a{
+                text-decoration: none;
+                color: $bg-blanco;
+                font-family: 'Poppins', sans-serif;
+                text-transform: uppercase;
+
+            }
+        }
+        li::before{
+        content: "";
+            position: absolute;
+            top: 0;
+            left: -50px;
+            width: 0;
+            height: 100%;
+            background-color: $bg-rojo;
+            transform: skewX(35deg);
+            z-index: -1;
+            transition: width 1s ;
+        }
+        li:hover::before{
+            width: 150%;
+        }
+
+    }
+    .titus1{
+        width: 100%;
+        color: black;
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+        .t1{
+            font-size: 38px;
+         }
+        .t2{
+            font-size: 30px;
+        }
+    }
+    h5{
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        color: black;
+    }
+    .descrip{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .d1{
+            width: 8rem;
+
+        }
+        .d2{
+            width: 8rem;
+        }
+        .d3{
+            width: 8rem;
+            padding-bottom: 1rem;
+        }
+        
+        
+    }
+    .listas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .i1{
+            width: 8rem;
+            transition: all 0.4s ease;
+        }
+        .i2{
+            width: 8rem;
+            transition: all 0.4s ease;
+        }
+        .i3{
+            width: 8rem;
+            transition: all 0.4s ease;
+        }
+        .scale1:hover{
+            transform: scale(1.1, 1.1);
+        }
+    }
+
+
+}   
