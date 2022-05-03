@@ -65,6 +65,7 @@ body{
 }
 .menu{
     list-style-type: none;
+    padding: 0;
     width: 100%;
     text-align: right;
 }
@@ -184,6 +185,7 @@ h5{
     overflow: auto;
     border: 5px;
     border-radius: 5%;
+    list-style-type: none;
     display: inline-block;
     font-family: 'Poppins', sans-serif ;
     text-align: center;
