@@ -212,7 +212,7 @@ main .listas .scale1:hover {
 }
 
 body {
-  background-image: url(//css/fotoscss/4.jpg);
+  background-image: url(../fotos/4.jpg);
   background-size: cover;
   background-attachment: fixed;
 }

@@ -58,7 +58,7 @@ h3{
     text-decoration: none;
 }
 body{
-    background-image: url(/css/fotoscss/4.jpg);
+    background-image: url(../fotos/4.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-attachment: fixed; 
@@ -88,7 +88,7 @@ body{
     left: -50px;
     width: 0;
     height: 100%;
-    background-color: red;
+    background-color: rgb(180, 21, 21);
     transform: skewX(35deg);
     z-index: -1;
     transition: width 1s ;
@@ -219,6 +219,7 @@ section, p{
 }
 .redes{
     margin: 1rem;
+    color: black;
 }
 .redes:hover{
     transition: all 0.4s ease;
@@ -274,6 +275,7 @@ section, p{
 }
 .i1{
     width: 8rem;
+    grid-area: i1;
     transition: all 0.4s ease;
 }
 .i2{
