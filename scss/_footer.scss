@@ -12,6 +12,11 @@ $rcolorW:rgb(1, 163, 1);
     margin-top: 5rem;
     padding-top: 5rem;
     text-align: center;
+    p{
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size:  16px;
+    }
     .scale1:hover{
         transform: scale(1.1, 1.1);
     }
