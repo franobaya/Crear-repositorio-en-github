@@ -308,6 +308,57 @@ main h5 {
   color: black;
 }
 
+main .productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .productos .product {
+  background-color: #FFF0C9;
+  width: 300px;
+  margin: 2rem;
+  padding: 10px;
+  height: 430px;
+  overflow: auto;
+  border: 5px;
+  border-radius: 5%;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+main .productos .product .pi {
+  width: 270px;
+  height: 350px;
+  padding: 0.5rem;
+  border-radius: 5%;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+main .productos .product .scale:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  border-radius: 30px;
+}
+
+main .productos .product .desp {
+  margin-top: 1rem;
+}
+
 main .contenedor {
   width: 100%;
   margin: auto;
@@ -475,11 +526,6 @@ main .contenedor .list .listas .scale1:hover {
   font-size: 16px;
 }
 
-.footer1 .scale1:hover {
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
-}
-
 .footer1 .redesI {
   margin: 1rem;
   color: #000000;
@@ -487,8 +533,8 @@ main .contenedor .list .listas .scale1:hover {
 
 .footer1 .redesI:hover {
   color: #d6415a;
-  -webkit-transition: all 0,4s ease;
-  transition: all 0,4s ease;
+  -webkit-transition: all 0,7s ease;
+  transition: all 0,7s ease;
 }
 
 .footer1 .redesW {
@@ -498,8 +544,13 @@ main .contenedor .list .listas .scale1:hover {
 
 .footer1 .redesW:hover {
   color: #01a301;
-  -webkit-transition: all 0,4s ease;
-  transition: all 0,4s ease;
+  -webkit-transition: all 0,7s ease;
+  transition: all 0,7s ease;
+}
+
+.footer1 .scale1:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 * {
