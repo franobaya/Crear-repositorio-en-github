@@ -553,6 +553,111 @@ main .contenedor .list .listas .scale1:hover {
           transform: scale(1.1, 1.1);
 }
 
+.nav .nav__label {
+  display: none;
+}
+
+.nav .nav__input {
+  display: none;
+}
+
+.nav .menu {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.nav .menu li {
+  margin: 10px;
+  padding: 10px;
+  outline: 2px solid white;
+  overflow: hidden;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  position: relative;
+}
+
+.nav .menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+.nav .menu li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  background-color: #b41515;
+  -webkit-transform: skewX(35deg);
+          transform: skewX(35deg);
+  z-index: -1;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
+.nav .menu li:hover::before {
+  width: 150%;
+}
+
+@media screen and (max-width: 768px) {
+  .head .in .ig {
+    color: #b41515;
+  }
+  .nav .nav__label {
+    position: fixed;
+    right: 0px;
+    top: 2px;
+    display: block;
+    cursor: pointer;
+  }
+  .nav .nav__label .nav__img {
+    width: 50px;
+    height: 50px;
+  }
+  .nav .menu {
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    background-color: #b41515;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-clip-path: circle(0 at center);
+            clip-path: circle(0 at center);
+    -webkit-transition: -webkit-clip-path 1s ease-in-out;
+    transition: -webkit-clip-path 1s ease-in-out;
+    transition: clip-path 1s ease-in-out;
+    transition: clip-path 1s ease-in-out, -webkit-clip-path 1s ease-in-out;
+  }
+  .nav .nav__input:checked + .menu {
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
